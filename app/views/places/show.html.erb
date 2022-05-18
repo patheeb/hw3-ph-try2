@@ -1,0 +1,39 @@
+
+
+<!--I'm not entirely sure why the header command here isn't working.
+  I keep getting an undefined error message, even after defining on line 9 
+  as well as in the controller. For sake of running the application I've
+  used the simple text of "create a new post" to reach A M.V.P.
+--> 
+
+<!-- <h1>
+<%for place in @places %>
+Create A New Post for "/place/new?place_id=<%= @place["name"] %>""
+<% end %>
+</h1>
+-->
+
+<h1>
+Create A New Post for
+</h1>
+
+<ul>
+  <% for post in @posts %>
+    <li>
+        <%= post["title"] %>,
+        <%= post["description"] %>,
+        <%= post["posted_on"] %>
+    
+        </li>
+  <% end %>
+</ul>
+
+
+<p><a href="/posts"> New Post </a></p>
+
+
+
+<p><a href="/places">Back to All Places</a></p>
+
+
+  
